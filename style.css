@@ -1,7 +1,48 @@
 :root {
-    --soft-blue: hsl(215, 51%, 70%);
+    --background-color: hsl(217, 54%, 11%);
+    --card-background-color: hsl(216, 50%, 16%);
+}
+
+html {
+    height: 100%;
+    font-family: 'Outfit', sans-serif;
+    color: hsl(0, 0%, 100%);
+    font-size: 18px;
 }
 
 body {
-    background-color: var(--soft-blue);
+    background-color: var(--background-color);
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    background-color: var(--card-background-color);
+    max-width: 350px;
+    max-height: 600px;
+    display:flex;
+    flex-direction: column;
+    padding: 24px;
+    border-radius: 15px;
+}
+
+.nft {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.content {
+    display:flex;
+    flex-direction: column;
+}
+
+.creator, .details {
+    display: flex;
+}
+
+.creator img {
+    height: 33px;
+    width: 33px;
 }
